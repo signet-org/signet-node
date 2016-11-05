@@ -1,0 +1,29 @@
+{
+  "name": "node-signet",
+  "version": "1.0.0",
+  "description": "package signatures for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bengl/node-signet.git"
+  },
+  "keywords": [
+    "signet",
+    "signatures",
+    "package",
+    "attestation"
+  ],
+  "author": "Bryan English <bryan@bryanenglish.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bengl/node-signet/issues"
+  },
+  "homepage": "https://github.com/bengl/node-signet#readme",
+  "dependencies": {
+    "inquirer": "^1.2.2",
+    "yargs": "^6.3.0"
+  }
+}
