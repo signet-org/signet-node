@@ -17,6 +17,9 @@ exports.handler = argv => {
   const configData = fs.existsSync(config.configFile) ?
     Object.assign(require(config.configFile), newConfigData) :
     newConfigData;
+  if (!configData.server) {
+    configData.server = 'https://sig.network';
+  }
   fs.writeFileSync(config.configFile, JSON.stringify(configData));
   console.log('Initialized config file at:', config.configFile);
   console.log('With public key id:', argv.keyid);
