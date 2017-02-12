@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-require('yargs').commandDir('./commands').demand(1).help().argv
+process.on('unhandledRejection', console.error);
+
+require('yargs').commandDir('./commands').demand(1).help().argv;
