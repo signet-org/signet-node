@@ -1,5 +1,6 @@
 const serverPut = require('../lib/server-put');
 const fs = require('fs');
+const path = require('path');
 
 exports.command = 'put <file>';
 
