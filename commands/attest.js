@@ -21,7 +21,7 @@ exports.handler = argv => {
   attest(fs.createReadStream(filename), keyId, (err, result) => {
     let attestations = [];
     if (fs.existsSync(filename+'.signet')) {
-      const existingData = fs.readFileSync(filename.signet, 'utf8');
+      const existingData = fs.readFileSync(filename+'.signet', 'utf8');
       attestations = JSON.stringify(existingData).attestations;
       // TODO avoid double-attesting (or allow it, timestamped?)
     }
